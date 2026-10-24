@@ -5,7 +5,7 @@ import {
   FolderOpen, ExternalLink
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/portfolio";
+const API_URL = "https://student-portfolio-builder-2.onrender.com/api/portfolio";
 const templates = [
   { id: "midnight", name: "Midnight Developer", description: "Dark navy with violet and aqua accents", mood: "Dark / modern" },
   { id: "minimal", name: "Minimal Professional", description: "Clean light layout with crisp typography", mood: "Clean / simple" },
