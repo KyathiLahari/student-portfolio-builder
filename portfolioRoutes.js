@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import Portfolio, { TEMPLATE_IDS } from "../Portfolio.js";
+import Portfolio, { TEMPLATE_IDS } from "./Portfolio.js";
 
 const router = express.Router();
 
