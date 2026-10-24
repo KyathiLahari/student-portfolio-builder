@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import portfolioRoutes from "./routes/portfolioRoutes.js";
+import portfolioRoutes from "./portfolioRoutes.js";
 
 dotenv.config();
 
