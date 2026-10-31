@@ -1,105 +1,104 @@
-# Student Portfolio Builder 
+# Student Portfolio Builder
 
-A beginner-friendly full-stack application for creating, editing, and previewing a student portfolio using React, Vite, Node.js, Express.js, and MongoDB.
+A full-stack web application that helps students create, customize, manage, and showcase their professional portfolios.
 
-## Features
+## 🌐 Live Demo
 
-- Edit a student's profile, career objective, education, skills, projects, and contact details.
-- Preview a responsive portfolio page.
-- Save and load portfolio data through a REST API.
-- Store portfolio data in MongoDB.
+**Website:** https://student-portfolio-builder-psi.vercel.app/
 
-## Tech Stack
+## 📌 About the Project
 
-- **Frontend:** React.js, Vite
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB Atlas
-- **Development tools:** npm, VS Code
+Student Portfolio Builder is a web-based application designed to help students build professional portfolios without needing advanced web development knowledge.
 
-## Project Structure
+Students can enter their personal information, education details, skills, projects, and social links, choose from different portfolio templates, and save their portfolios for future editing.
 
-```text
-student-portfolio-builder/
-├── backend/
-│   ├── src/
-│   │   ├── server.js
-│   │   ├── models/
-│   │   │   └── Portfolio.js
-│   │   └── routes/
-│   │       └── portfolioRoutes.js
-│   ├── .env.example
-│   └── package.json
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── styles.css
-│   ├── index.html
-│   └── package.json
-├── .gitignore
-└── README.md
-```
+## ✨ Features
 
-## Requirements
+- Create and manage multiple portfolios.
+- Choose from 8 different portfolio templates.
+- Add personal information and profile photos.
+- Add career objectives and education details.
+- Showcase technical skills and projects.
+- Include GitHub and LinkedIn profile links.
+- Edit, preview, and delete saved portfolios.
+- Store portfolio information in MongoDB.
+- Responsive web interface.
 
-- Node.js LTS — https://nodejs.org/
-- npm (included with Node.js)
-- MongoDB Atlas account or a local MongoDB server
-- VS Code (recommended)
+## 🎨 Available Templates
 
-## Setup and Run Locally
+1. Midnight Developer
+2. Minimal Professional
+3. Gradient Creative
+4. Terminal Hacker
+5. Cyberpunk Neon
+6. Elegant Editorial
+7. Glassmorphism
+8. Bento Grid
 
-### 1. Install Node.js
+## 🛠️ Technologies Used
 
-Install Node.js LTS from https://nodejs.org/.
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend user interface |
+| Vite | Frontend development and build tool |
+| Node.js | Backend runtime |
+| Express.js | Backend API |
+| MongoDB Atlas | Database |
+| Mongoose | MongoDB object modeling |
+| JavaScript | Application functionality |
+| CSS | Styling and layout |
+| Vercel | Frontend deployment |
+| Render | Backend deployment |
+| GitHub | Version control and source code hosting |
 
-Verify the installation in your terminal:
+## ⚙️ System Architecture
+
+The application follows a full-stack architecture:
+
+- **Frontend:** React.js communicates with the backend through API requests.
+- **Backend:** Node.js and Express.js handle application requests and portfolio operations.
+- **Database:** MongoDB Atlas stores portfolio information.
+- **Deployment:** The frontend is hosted on Vercel, and the backend is hosted on Render.
+
+## 🚀 Running the Project Locally
+
+### Prerequisites
+
+- Node.js and npm
+- MongoDB Atlas account or a MongoDB database
+- Git
+
+### 1. Clone the Repository
 
 ```bash
-node -v
-npm -v
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### 2. Configure MongoDB
+### 2. Open the Project
 
-The project can use MongoDB Atlas or a local MongoDB server.
+```bash
+cd student-portfolio-builder
+```
 
-For MongoDB Atlas:
-
-1. Create an account at https://www.mongodb.com/atlas.
-2. Create a cluster and a database user.
-3. Configure Network Access for the environment where your backend runs.
-4. Select **Connect → Drivers → Node.js** and copy the connection string.
-5. Replace the username, password, and database name with your own values.
-
-Keep your database credentials private.
-
-### 3. Configure and Start the Backend
-
-Open a terminal at the project root:
+### 3. Start the Backend
 
 ```bash
 cd backend
 npm install
 ```
 
-Create `backend/.env` using `.env.example` as a template. On Windows PowerShell, run:
+Create a `.env` file inside the backend folder:
 
-```powershell
-Copy-Item .env.example .env
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
 ```
 
-Edit `backend/.env` and set `MONGODB_URI` to your MongoDB connection string.
-
-Start the backend using the available development script:
+Start the backend:
 
 ```bash
 npm run dev
 ```
-
-When startup succeeds, the terminal should report that MongoDB is connected and the API server is running. The default local port is `5000`, unless configured otherwise.
-
-Keep the backend terminal open while running the application locally.
 
 ### 4. Start the Frontend
 
@@ -115,4 +114,48 @@ Open the local URL printed by Vite, usually:
 
 http://localhost:5173
 
-### 5. Demonstr
+## 📂 Project Structure
+
+```text
+student-portfolio-builder/
+│
+├── backend/
+│   ├── src/
+│   ├── package.json
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── README.md
+├── project-presentation.pptx
+├── project-documentation.docx
+└── project-source-code.zip
+```
+
+*The presentation, documentation, and ZIP files should be added to the repository using these filenames or updated in this section to match your actual filenames.*
+
+## 📸 Project Screenshots
+
+Visit the live website to explore the portfolio dashboard, editor, templates, and preview pages.
+
+## 🔮 Future Enhancements
+
+- Download portfolios directly as PDF files.
+- Generate unique public sharing links.
+- Add user authentication.
+- Add more portfolio templates.
+- Improve portfolio customization options.
+
+## 👩‍💻 Developed By
+
+**Student Portfolio Builder**  
+Full Stack Development Mini Project
+
+## 📄 Project Resources
+
+- [Live Website](https://student-portfolio-builder-psi.vercel.app/)
+- [Backend Deployment](https://student-portfolio-builder-2.onrender.com)
+
